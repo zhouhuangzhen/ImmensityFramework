@@ -1,0 +1,221 @@
+
+                        y0 = y;
+                        break;
+                    case 'center':
+                        y0 = y + (viewHeight - itemHeight) / 2;
+                        break;
+                    case 'bottom':
+                        y0 = y + (viewHeight - itemHeight);
+                        break;
+                }
+
+                return [
+                    [offset, y0],
+                    [offset, y0 + itemHeight]
+                ];
+            }
+            var val = data.get(valueDim, idx) || 0;
+            var itemWidth = linearMap(val, [min, max], sizeExtent, true);
+            var x0;
+            switch (funnelAlign) {
+                case 'left':
+                    x0 = x;
+                    break;
+                case 'center':
+                    x0 = x + (viewWidth - itemWidth) / 2;
+                    break;
+                case 'right':
+                    x0 = x + viewWidth - itemWidth;
+                    break;
+            }
+            return [
+                [x0, offset],
+                [x0 + itemWidth, offset]
+            ];
+        };
+
+        if (sort === 'ascending') {
+            // From bottom to top
+            itemSize = -itemSize;
+            gap = -gap;
+            if (orient === 'horizontal') {
+                x += viewWidth;
+            }
+            else {
+                y += viewHeight;
+            }
+            indices = indices.reverse();
+        }
+
+        for (var i = 0; i < indices.length; i++) {
+            var idx = indices[i];
+            var nextIdx = indices[i + 1];
+            var itemModel = data.getItemModel(idx);
+
+            if (orient === 'horizontal') {
+                var width = itemModel.get('itemStyle.width');
+                if (width == null) {
+                    width = itemSize;
+                }
+                else {
+                    width = parsePercent$1(width, viewWidth);
+                    if (sort === 'ascending') {
+                        width = -width;
+                    }
+                }
+
+                var start = getLinePoints(idx, x);
+                var end = getLinePoints(nextIdx, x + width);
+
+                x += width + gap;
+
+                data.setItemLayout(idx, {
+                    points: start.concat(end.slice().reverse())
+                });
+            }
+            else {
+                var height = itemModel.get('itemStyle.height');
+                if (height == null) {
+                    height = itemSize;
+                }
+                else {
+                    height = parsePercent$1(height, viewHeight);
+                    if (sort === 'ascending') {
+                        height = -height;
+                    }
+                }
+
+                var start = orient === 'horizontal' ? getLinePoints(idx, x) : getLinePoints(idx, y);
+                var end = orient === 'horizontal'
+                    ? getLinePoints(nextIdx, x + width) : getLinePoints(nextIdx, y + height);
+
+                y += height + gap;
+
+                data.setItemLayout(idx, {
+                    points: start.concat(end.slice().reverse())
+                });
+            }
+        }
+
+        labelLayout$1(data);
+    });
+};
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+registerVisual(dataColor('funnel'));
+registerLayout(funnelLayout);
+registerProcessor(dataFilter('funnel'));
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+var parallelPreprocessor = function (option) {
+    createParallelIfNeeded(option);
+    mergeAxisOptionFromParallel(option);
+};
+
+/**
+ * Create a parallel coordinate if not exists.
+ * @inner
+ */
+function createParallelIfNeeded(option) {
+    if (option.parallel) {
+        return;
+    }
+
+    var hasParallelSeries = false;
+
+    each$1(option.series, function (seriesOpt) {
+        if (seriesOpt && seriesOpt.type === 'parallel') {
+            hasParallelSeries = true;
+        }
+    });
+
+    if (hasParallelSeries) {
+        option.parallel = [{}];
+    }
+}
+
+/**
+ * Merge aixs definition from parallel option (if exists) to axis option.
+ * @inner
+ */
+function mergeAxisOptionFromParallel(option) {
+    var axes = normalizeToArray(option.parallelAxis);
+
+    each$1(axes, function (axisOption) {
+        if (!isObject$1(axisOption)) {
+            return;
+        }
+
+        var parallelIndex = axisOption.parallelIndex || 0;
+        var parallelOption = normalizeToArray(option.parallel)[parallelIndex];
+
+        if (parallelOption && parallelOption.parallelAxisDefault) {
+            merge(axisOption, parallelOption.parallelAxisDefault, false);
+        }
+    });
+}
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+/**
+ * @constructor module:echarts/coord/parallel/ParallelAxis
+ * @extends {module:echarts/coord/Axis}
+ * @param {string} dim
+ * @param {*} scale
+ * @param {Array.<number>} coordExtent
+ * @param {string} axisType
+ */
+var ParallelA

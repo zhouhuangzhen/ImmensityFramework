@@ -1,0 +1,2 @@
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.csprojAssemblyReference.cache
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.csproj.CoreCompileInputs.cache

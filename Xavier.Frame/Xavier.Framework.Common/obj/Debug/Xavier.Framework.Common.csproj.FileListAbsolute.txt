@@ -1,0 +1,9 @@
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.csproj.CoreCompileInputs.cache
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\bin\Debug\Xavier.Framework.Common.dll
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\bin\Debug\Xavier.Framework.Common.pdb
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\bin\Debug\Xavier.Framework.Entity.dll
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\bin\Debug\Xavier.Framework.Entity.pdb
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.csprojAssemblyReference.cache
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.csproj.CopyComplete
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.dll
+D:\Mine\MyCodings\MyCoding\Xavier.Frame\Xavier.Framework.Common\obj\Debug\Xavier.Framework.Common.pdb

@@ -1,0 +1,6 @@
+D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Services\bin\Debug\CodeGenerator.Frame.Services.dll
+D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Services\bin\Debug\CodeGenerator.Frame.Services.pdb
+D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Services\obj\Debug\CodeGenerator.Frame.Services.csprojAssemblyReference.cache
+D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Services\obj\Debug\CodeGenerator.Frame.Services.csproj.CoreCompileInputs.cache
+D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Services\obj\Debug\CodeGenerator.Frame.Services.dll
+D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Services\obj\Debug\CodeGenerator.Frame.Services.pdb
