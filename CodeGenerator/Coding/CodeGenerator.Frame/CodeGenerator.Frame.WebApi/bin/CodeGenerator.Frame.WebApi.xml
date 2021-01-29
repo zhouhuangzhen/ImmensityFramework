@@ -67,6 +67,16 @@
             依赖注入
             </summary>
         </member>
+        <member name="T:CodeGenerator.Frame.WebApi.App_Start.Configs.LogConfig">
+            <summary>
+            日志注册类
+            </summary>
+        </member>
+        <member name="M:CodeGenerator.Frame.WebApi.App_Start.Configs.LogConfig.Register">
+            <summary>
+            注册日志
+            </summary>
+        </member>
         <member name="T:CodeGenerator.Frame.WebApi.BundleConfig">
             <summary>
             初始化前端常用文件压缩配置

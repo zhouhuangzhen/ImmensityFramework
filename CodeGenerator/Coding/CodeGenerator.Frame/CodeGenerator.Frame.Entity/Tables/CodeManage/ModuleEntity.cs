@@ -10,7 +10,7 @@ namespace CodeGenerator.Frame.Entity.Tables.CodeManage
     /// <summary>
     /// 数据库表实体--框架模块表
     /// </summary>
-    public class ModuleEntity : BaseEntity<ModuleEntity>
+    public class ModuleEntity : BaseEntity
     {
         /// <summary>
         /// 编码

@@ -37,6 +37,11 @@ namespace CodeGenerator.Frame.Entity.ViewModels
         public string CreateUser { get; set; }
 
         /// <summary>
+        /// 系统Id
+        /// </summary>
+        public string SystemId { get; set; }
+
+        /// <summary>
         /// 系统编码
         /// </summary>
         public string SystemCode { get; set; }

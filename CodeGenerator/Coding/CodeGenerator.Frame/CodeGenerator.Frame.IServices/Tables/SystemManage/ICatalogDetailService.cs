@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeGenerator.Frame.IServices.Tables.SystemManage
 {
-    interface ICatalogDetailService
+    public interface ICatalogDetailService
     {
     }
 }

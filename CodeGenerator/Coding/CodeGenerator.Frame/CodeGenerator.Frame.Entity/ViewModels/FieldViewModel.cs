@@ -109,6 +109,6 @@ namespace CodeGenerator.Frame.Entity.ViewModels
         /// <summary>
         /// 表字段描述
         /// </summary>
-        public int Comment { get; set; }
+        public string Comment { get; set; }
     }
 }

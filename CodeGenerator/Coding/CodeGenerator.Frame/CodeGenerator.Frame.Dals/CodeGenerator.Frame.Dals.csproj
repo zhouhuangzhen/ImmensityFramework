@@ -10,11 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodeGenerator.Frame.Dals</RootNamespace>
     <AssemblyName>CodeGenerator.Frame.Dals</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -135,7 +136,7 @@
       <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Ubiety.Dns.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xavier.Framework.Db, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xavier.Framework.Db.1.0.3\lib\net461\Xavier.Framework.Db.dll</HintPath>
+      <HintPath>..\packages\Xavier.Framework.Db.1.0.5\lib\net461\Xavier.Framework.Db.dll</HintPath>
     </Reference>
     <Reference Include="Z.EntityFramework.Extensions, Version=5.1.13.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
       <HintPath>..\packages\Z.EntityFramework.Extensions.5.1.13\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>

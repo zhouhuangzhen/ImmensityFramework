@@ -27,6 +27,8 @@ namespace CodeGenerator.Frame.WebApi
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             //  依赖注入
             AutofaceConfig.RegisterDependencies();
+            //  注册日志
+            LogConfig.Register();
         }
     }
 }

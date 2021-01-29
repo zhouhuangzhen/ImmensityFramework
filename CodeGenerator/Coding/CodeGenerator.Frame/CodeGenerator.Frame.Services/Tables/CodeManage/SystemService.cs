@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeGenerator.Frame.Services.Tables.CodeManage
 {
-    class SystemService
+    public class SystemService
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeGenerator.Frame.IServices.Tables.CodeManage
 {
-    interface IFrameService
+    public interface IFrameService
     {
     }
 }

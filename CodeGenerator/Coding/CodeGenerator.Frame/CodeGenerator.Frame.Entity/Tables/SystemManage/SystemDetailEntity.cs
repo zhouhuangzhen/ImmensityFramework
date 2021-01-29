@@ -10,7 +10,7 @@ namespace CodeGenerator.Frame.Entity.Tables.SystemManage
     /// <summary>
     /// 数据库表实体--系统字典明细配置表
     /// </summary>
-    public class SystemDetailEntity : BaseEntity<SystemDetailEntity>
+    public class SystemDetailEntity : BaseEntity
     {
         /// <summary>
         /// 字典明细Id

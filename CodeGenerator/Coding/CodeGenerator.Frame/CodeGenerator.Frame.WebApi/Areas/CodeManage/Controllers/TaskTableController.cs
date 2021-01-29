@@ -13,5 +13,6 @@ namespace CodeGenerator.Frame.WebApi.Areas.CodeManage.Controllers
     /// </summary>
     public class TaskTableController : BaseController
     {
+        public TaskTableController() { }
     }
 }

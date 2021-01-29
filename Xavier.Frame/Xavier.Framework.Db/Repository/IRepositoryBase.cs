@@ -147,6 +147,21 @@ namespace Xavier.Framework.Db.Repository
         /// 查询列表
         /// </summary>
         /// <typeparam name="TEntity">泛型实体</typeparam>
+        /// <returns>返回结果</returns>
+        List<TEntity> FindList<TEntity>() where TEntity : class;
+
+        /// <summary>
+        /// 查询列表
+        /// </summary>
+        /// <typeparam name="TEntity">泛型实体</typeparam>
+        /// <param name="predicate">执行Sql的Lamda表达式</param>
+        /// <returns>返回结果</returns>
+        List<TEntity> FindList<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class;
+
+        /// <summary>
+        /// 查询列表
+        /// </summary>
+        /// <typeparam name="TEntity">泛型实体</typeparam>
         /// <param name="strSql">执行Sql语句</param>
         /// <returns>返回结果</returns>
         List<TEntity> FindList<TEntity>(string strSql) where TEntity : class;
@@ -344,6 +359,19 @@ namespace Xavier.Framework.Db.Repository
         /// <param name="predicate">执行Sql的Lamda表达式</param>
         /// <returns>返回结果</returns>
         IQueryable<TEntity> IQueryable(Expression<Func<TEntity, bool>> predicate);
+
+        /// <summary>
+        /// 查询列表
+        /// </summary>
+        /// <returns>返回结果</returns>
+        List<TEntity> FindList();
+
+        /// <summary>
+        /// 查询列表
+        /// </summary>
+        /// <param name="predicate">执行Sql的Lamda表达式</param>
+        /// <returns>返回结果</returns>
+        List<TEntity> FindList(Expression<Func<TEntity, bool>> predicate);
 
         /// <summary>
         /// 查询列表

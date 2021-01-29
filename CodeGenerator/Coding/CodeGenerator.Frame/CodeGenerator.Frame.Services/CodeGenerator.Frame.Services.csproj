@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodeGenerator.Frame.Services</RootNamespace>
     <AssemblyName>CodeGenerator.Frame.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +56,19 @@
     <Compile Include="Tables\SystemManage\SystemDetailService.cs" />
     <Compile Include="Views\ViewCatalogService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CodeGenerator.Frame.Dals\CodeGenerator.Frame.Dals.csproj">
+      <Project>{CB9B9E10-5151-4B91-8024-3054B94AA1A8}</Project>
+      <Name>CodeGenerator.Frame.Dals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeGenerator.Frame.Entity\CodeGenerator.Frame.Entity.csproj">
+      <Project>{8CC5673A-CEBE-4671-9762-CE95ED6BE4C1}</Project>
+      <Name>CodeGenerator.Frame.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeGenerator.Frame.IServices\CodeGenerator.Frame.IServices.csproj">
+      <Project>{cf27dedb-bff7-4634-b70f-c69d929439d8}</Project>
+      <Name>CodeGenerator.Frame.IServices</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

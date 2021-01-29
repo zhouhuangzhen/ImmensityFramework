@@ -13,5 +13,6 @@ namespace CodeGenerator.Frame.WebApi.Areas.SystemManage.Controllers
     /// </summary>
     public class CatalogController : BaseController
     {
+        public CatalogController() { }
     }
 }

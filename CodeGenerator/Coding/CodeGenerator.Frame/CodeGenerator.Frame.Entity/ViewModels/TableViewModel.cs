@@ -42,6 +42,16 @@ namespace CodeGenerator.Frame.Entity.ViewModels
         public string SystemId { get; set; }
 
         /// <summary>
+        /// 系统编码
+        /// </summary>
+        public string SystemCode { get; set; }
+
+        /// <summary>
+        /// 系统名称
+        /// </summary>
+        public string SystemName { get; set; }
+
+        /// <summary>
         /// IP地址
         /// </summary>
         public string IP { get; set; }

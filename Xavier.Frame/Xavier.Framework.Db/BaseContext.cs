@@ -64,6 +64,15 @@ namespace Xavier.Framework.Db
         }
         #endregion
 
+        #region 析构函数
+        /// <summary>
+        /// 析构函数
+        /// </summary>
+        ~BaseContext(){
+            //  this.Close();
+        }
+        #endregion
+
         #region 数据库处理
         /// <summary>
         /// 打开数据库
@@ -538,6 +547,53 @@ namespace Xavier.Framework.Db
         }
 
         /// <summary>
+        /// 查询所有数据
+        /// </summary>
+        /// <typeparam name="TEntity">泛型</typeparam>
+        /// <returns>返回结果</returns>
+        public List<TEntity> FindList<TEntity>() where TEntity : class
+        {
+            try
+            {
+                this.Open();
+                return dbcontext.Set<TEntity>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+
+                this.Close();
+            }
+        }
+
+        /// <summary>
+        /// 根据查询表达式查询数据
+        /// </summary>
+        /// <typeparam name="TEntity">泛型</typeparam>
+        /// <param name="predicate">查询表达式</param>
+        /// <returns>返回结果</returns>
+        public List<TEntity> FindList<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class
+        {
+            try
+            {
+                this.Open();
+                return dbcontext.Set<TEntity>().Where(predicate).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+
+                this.Close();
+            }
+        }
+
+        /// <summary>
         /// 根据sql语句查询数据
         /// </summary>
         /// <typeparam name="TEntity">泛型</typeparam>
@@ -918,7 +974,6 @@ namespace Xavier.Framework.Db
         private DbContext dbcontext = null;
         #endregion
 
-
         #region  构造函数
         /// <summary>
         /// 构造函数
@@ -954,6 +1009,16 @@ namespace Xavier.Framework.Db
                 dbcontext.Dispose();
             }
             dbcontext = new DatabaseContext(connection, provider, schema);
+        }
+        #endregion
+
+        #region 析构函数
+        /// <summary>
+        /// 析构函数
+        /// </summary>
+        ~BaseContext()
+        {
+            //  this.Close();
         }
         #endregion
 
@@ -1443,6 +1508,49 @@ namespace Xavier.Framework.Db
             {
                 Open();
                 return dbcontext.Set<TEntity>().Where(predicate);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                this.Close();
+            }
+        }
+
+        /// <summary>
+        /// 获得所有的实体信息集合
+        /// </summary>
+        /// <returns>返回信息</returns>
+        public List<TEntity> FindList()
+        {
+            try
+            {
+                Open();
+                return dbcontext.Set<TEntity>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                this.Close();
+            }
+        }
+
+        /// <summary>
+        /// 根据查询表达式获得实体信息集合
+        /// </summary>
+        /// <param name="predicate">查询表达式</param>
+        /// <returns>返回信息</returns>
+        public List<TEntity> FindList(Expression<Func<TEntity, bool>> predicate)
+        {
+            try
+            {
+                Open();
+                return dbcontext.Set<TEntity>().Where(predicate).ToList();
             }
             catch (Exception ex)
             {

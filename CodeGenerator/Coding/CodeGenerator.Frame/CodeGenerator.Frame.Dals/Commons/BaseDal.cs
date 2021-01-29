@@ -9,11 +9,13 @@ using Xavier.Framework.Db.Repository;
 
 namespace CodeGenerator.Frame.Dals.Commons
 {
+    #region 数据处理类--基础处理
     /// <summary>
     /// 数据处理类--基础处理
     /// </summary>
-    public class BaseDal : RepositoryBase
+    public class BaseDal : RepositoryBase, IDisposable
     {
+        #region 构造函数
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -41,6 +43,16 @@ namespace CodeGenerator.Frame.Dals.Commons
         {
 
         }
+        #endregion
+
+        #region 方法
+        /// <summary>
+        /// 资源释放
+        /// </summary>
+        public void Dispose()
+        {
+            base.Close();
+        }
 
         /// <summary>
         /// 获取数据库中的表信息
@@ -66,5 +78,7 @@ namespace CodeGenerator.Frame.Dals.Commons
         {
             return null;
         }
+        #endregion
     }
+    #endregion
 }

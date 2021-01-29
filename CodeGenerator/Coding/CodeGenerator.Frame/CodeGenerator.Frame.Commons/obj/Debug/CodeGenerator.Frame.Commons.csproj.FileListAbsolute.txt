@@ -4,3 +4,8 @@ D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerato
 D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\obj\Debug\CodeGenerator.Frame.Commons.csproj.CoreCompileInputs.cache
 D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\obj\Debug\CodeGenerator.Frame.Commons.dll
 D:\Mine\MyCodings\MyCoding\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\obj\Debug\CodeGenerator.Frame.Commons.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\bin\Debug\CodeGenerator.Frame.Commons.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\bin\Debug\CodeGenerator.Frame.Commons.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\obj\Debug\CodeGenerator.Frame.Commons.csproj.CoreCompileInputs.cache
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\obj\Debug\CodeGenerator.Frame.Commons.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\CodeGenerator\Coding\CodeGenerator.Frame\CodeGenerator.Frame.Commons\obj\Debug\CodeGenerator.Frame.Commons.pdb

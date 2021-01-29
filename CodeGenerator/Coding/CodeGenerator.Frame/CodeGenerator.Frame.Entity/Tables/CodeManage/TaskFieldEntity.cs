@@ -10,7 +10,7 @@ namespace CodeGenerator.Frame.Entity.Tables.CodeManage
     /// <summary>
     /// 数据库表实体--任务字段表
     /// </summary>
-    public class TaskFieldEntity : BaseEntity<TaskFieldEntity>
+    public class TaskFieldEntity : BaseEntity
     {
         /// <summary>
         /// 系统使用表格Id

@@ -10,7 +10,7 @@ namespace CodeGenerator.Frame.Entity.Tables.SystemManage
     /// <summary>
     /// 数据库表实体--字典分类表
     /// </summary>
-    public class CatalogEntity : BaseEntity<CatalogEntity>
+    public class CatalogEntity : BaseEntity
     {
         /// <summary>
         /// 分类编码

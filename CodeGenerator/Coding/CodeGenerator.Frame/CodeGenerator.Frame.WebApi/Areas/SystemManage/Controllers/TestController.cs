@@ -1,4 +1,7 @@
-﻿using CodeGenerator.Frame.WebApi.App_Start.ApiControllers;
+﻿using CodeGenerator.Frame.IServices.Tables.SystemManage;
+using CodeGenerator.Frame.WebApi.App_Start.ApiControllers;
+using log4net;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +15,21 @@ namespace CodeGenerator.Frame.WebApi.Areas.SystemManage.Controllers
     [RoutePrefix("api/Test")]
     public class TestController : BaseController
     {
+        private readonly ICatalogService serviceCatalog = null;
+
+        private readonly ILog logger = LogManager.GetLogger(typeof(TestController));
+
+        public TestController(ICatalogService _serviceCatalog)
+        {
+            this.serviceCatalog = _serviceCatalog;
+        }
+
         [HttpGet, Route("xxx")]
         public AjaxResult Get()
         {
-            return Success("我是自定义路由Action，Get方法");
+            logger.Error("xxx");
+            var res = this.serviceCatalog.GetList("", "", -1);
+            return Success("我是自定义路由Action，Get方法 ： " + JsonConvert.SerializeObject(res));
         }
 
         public AjaxResult Post()

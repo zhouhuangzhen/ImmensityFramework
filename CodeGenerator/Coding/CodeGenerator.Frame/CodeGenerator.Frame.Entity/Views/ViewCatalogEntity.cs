@@ -10,7 +10,7 @@ namespace CodeGenerator.Frame.Entity.Views
     /// <summary>
     /// 数据库表视图实体--字典视图
     /// </summary>
-    public class ViewCatalogEntity : BaseEntity<ViewCatalogEntity>
+    public class ViewCatalogEntity : BaseEntity
     {
         /// <summary>
         /// 字典明细编码

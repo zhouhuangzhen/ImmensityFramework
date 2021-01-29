@@ -4,3 +4,9 @@ D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.F
 D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.csproj.CoreCompileInputs.cache
 D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.dll
 D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Entity\bin\Debug\Tests.Framework.Entity.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Entity\bin\Debug\Tests.Framework.Entity.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.csproj.CoreCompileInputs.cache
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Entity\obj\Debug\Tests.Framework.Entity.csprojAssemblyReference.cache

@@ -89,12 +89,17 @@ namespace CodeGenerator.Frame.Entity.ViewModels
         /// <summary>
         /// 字典类型
         /// </summary>
-        public string CatalogType { get; set; }
+        public int CatalogType { get; set; }
 
         /// <summary>
         /// 字典分类描述
         /// </summary>
         public string CatalogText { get; set; }
+
+        /// <summary>
+        /// 明细Id
+        /// </summary>
+        public string ItemId { get; set; }
 
         /// <summary>
         /// 字典明细编码
@@ -119,11 +124,16 @@ namespace CodeGenerator.Frame.Entity.ViewModels
         /// <summary>
         /// 字典明细排序
         /// </summary>
-        public string ItemOrder { get; set; }
+        public int ItemOrder { get; set; }
 
         /// <summary>
-        /// 字典明细所属分类
+        /// 字典明细所属分类Id
         /// </summary>
         public string ItemParentOid { get; set; }
+
+        /// <summary>
+        /// 系统各自配置值
+        /// </summary>
+        public string Value { get; set; }
     }
 }

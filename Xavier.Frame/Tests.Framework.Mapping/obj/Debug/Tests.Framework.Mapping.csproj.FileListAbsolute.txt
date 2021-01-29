@@ -12,3 +12,17 @@ D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\Entity
 D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.csproj.CopyComplete
 D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.dll
 D:\Mine\MyCodings\MyCoding\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\Tests.Framework.Mapping.dll.config
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\Tests.Framework.Mapping.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\Tests.Framework.Mapping.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\EntityFramework.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\EntityFramework.SqlServer.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\Tests.Framework.Entity.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\Tests.Framework.Entity.pdb
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\EntityFramework.xml
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\bin\Debug\EntityFramework.SqlServer.xml
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.csprojAssemblyReference.cache
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.csproj.CoreCompileInputs.cache
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.csproj.CopyComplete
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.dll
+D:\Mine\MyCodings\MyCoding\ImmensityFramework\Xavier.Frame\Tests.Framework.Mapping\obj\Debug\Tests.Framework.Mapping.pdb

@@ -10,7 +10,7 @@ namespace CodeGenerator.Frame.Entity.Tables.CodeManage
     /// <summary>
     /// 数据库表实体--系统菜单表
     /// </summary>
-    public class SystemEntity : BaseEntity<SystemEntity>
+    public class SystemEntity : BaseEntity
     {
         /// <summary>
         /// 编码
